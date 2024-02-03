@@ -3,7 +3,7 @@ const cors = require("cors")
 const mongoose=require("mongoose")
 
 const app = express()
-var corsOptions={origin:['https://bulk-mail-frontend-iota.vercel.app']}
+var corsOptions={origin:['https://bulk-mail-frontend-iota.vercel.app'],}
 app.use(cors(corsOptions))
 app.use(express.json())
 
