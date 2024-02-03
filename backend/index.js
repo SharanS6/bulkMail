@@ -3,7 +3,11 @@ const cors = require("cors")
 const mongoose=require("mongoose")
 
 const app = express()
-app.use(cors())
+app.use(cors({
+    origin:{"https://bulk-mail-api.vercel.app/"},
+    methods:["POST","GET"],
+    credentials:true
+}))
 app.use(express.json())
 
 app.listen(5000, function () {
