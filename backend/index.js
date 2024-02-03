@@ -31,7 +31,7 @@ app.get("/",function(req,res)
 
 
 app.post("/sendmail", function (req, res) {
-
+res.send("returned")
     var msg = req.body.msg
     var newtotalemail = req.body.newtotalemail
 
