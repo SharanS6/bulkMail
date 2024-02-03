@@ -24,7 +24,7 @@ const credential =mongoose.model('credential',{},"bulkmail")
 
 app.get("/",function(req,res)
 {
-    res("server is connected")
+    res.send("server is connected")
 })
 
 
