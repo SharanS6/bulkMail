@@ -6,7 +6,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.listen("https://bulk-mail-api.vercel.app/", function () {
+app.listen(5000, function () {
     console.log("server connected...")
 })
 "use strict";
