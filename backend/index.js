@@ -22,7 +22,10 @@ mongoose.connect("mongodb+srv://sharan:123@cluster0.stpyira.mongodb.net/passkey?
 
 const credential =mongoose.model('credential',{},"bulkmail")
 
-
+app.get("/",function(req,res)
+{
+    res("server is connected")
+})
 
 
 
