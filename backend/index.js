@@ -26,7 +26,6 @@ const credential =mongoose.model('credential',{},"bulkmail")
 
 
 
-
 app.post("/sendmail", function (req, res) {
 
     var msg = req.body.msg
