@@ -6,7 +6,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.listen(5000, function () {
+app.listen("https://bulk-mail-api.vercel.app/", function () {
     console.log("server connected...")
 })
 "use strict";
@@ -21,7 +21,6 @@ mongoose.connect("mongodb+srv://sharan:123@cluster0.stpyira.mongodb.net/passkey?
 
 
 const credential =mongoose.model('credential',{},"bulkmail")
-
 
 
 
