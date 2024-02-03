@@ -7,7 +7,7 @@ var corsOptions={origin:['https://bulk-mail-frontend-iota.vercel.app'],}
 app.use(cors(corsOptions))
 app.use(express.json())
 
-app.listen('https://vercel.com/sharan-ss-projects/bulk-mail-api', function () {
+app.listen(5000, function () {
     console.log("server connected...")
 })
 "use strict";
