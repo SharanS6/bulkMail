@@ -7,9 +7,9 @@ var corsOptions={origin:['https://bulk-mail-frontend-iota.vercel.app'],}
 app.use(cors(corsOptions))
 app.use(express.json())
 
-app.listen(5000, function () {
-    console.log("server connected...")
-})
+// app.listen(5000, function () {
+//     console.log("server connected...")
+// })
 "use strict";
 const nodemailer = require("nodemailer");
 
