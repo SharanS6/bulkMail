@@ -16,7 +16,7 @@ const [newtotalemail,settotalemail]=useState([])
   }
   function sendmsg(){
     setstatus(true)
-    axios.post("http://localhost:5000/sendmail",{msg:msg,newtotalemail:newtotalemail}).then(function(data){
+    axios.post("https://bulk-mail-api.vercel.app/sendmail",{msg:msg,newtotalemail:newtotalemail}).then(function(data){
       if(data.data === true)
       {
         alert("Email send successfully")
